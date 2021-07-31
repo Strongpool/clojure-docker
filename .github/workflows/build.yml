@@ -31,6 +31,6 @@ jobs:
         with:
           push: true
           build-args: |
-            ERLANG_VERSION=${{ env.IMAGE_TAG }}
+            IMAGE_TAG=${{ env.IMAGE_TAG }}
           tags: |
             ghcr.io/strongpool/clojure:${{ env.IMAGE_TAG }}
